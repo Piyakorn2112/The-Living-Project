@@ -1,0 +1,342 @@
+body{
+  background-color: rgb(2, 17, 28);
+  overflow: hidden;
+}
+
+
+.Light{
+  position: fixed;
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+  opacity: 0.1;
+  color: rgb(2, 17, 28);
+  top: 330px;
+  left: 325px;
+
+
+}
+.Roundimg{
+  width: 60px;
+  margin-left: -25px;
+  position: absolute;
+ 
+}
+.subContainer{
+  transform: translateY(0);
+  transition: transform 5s;
+  pointer-events: none;
+}
+.RoundimgT{
+  width: 100px;
+  position: absolute;
+  transition: all 0.6s;
+
+}
+.RoundimgR{
+  width: 100px;
+  position: absolute;
+  transition: all 0.6s;
+
+}
+
+.container{
+  width: 30px; 
+  height: 30px; 
+  pointer-events: none;
+  position: absolute;
+  transform-origin: bottom;
+
+}
+
+.base{
+  position: absolute;
+  background-color: rgb(2, 21, 30);
+  width: 120%;
+  height: 40px;
+  filter: blur(25px);
+  pointer-events: none;
+}
+
+.frontTint{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2, 8, 33, 0.155);
+  position: fixed;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.frontTintBlur{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2, 33, 25, 0.155);
+  position: fixed;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(0.5px);
+}
+
+.frontTintBlur1{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2, 8, 33, 0.155);
+  position: fixed;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(1.2px);
+  -webkit-backdrop-filter: blur(1.2px);
+}
+
+.LightButton{
+  width: 50px;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  pointer-events: none;
+  z-index: 250;
+  border-radius: 25px;
+  border: solid;
+  border-width: 0.5px;
+  border-color: rgba(43, 43, 43, 0.09);
+  transition: scale 0.6s cubic-bezier(.43,.14,.28,1.01);
+
+  top: 400px;
+  left: 400px;
+}
+
+.Menu_button_icoL{
+  width: 28px; margin: 5px 11px;
+  opacity: 1;
+  transition: all 0.45s;
+}
+
+.LightSlide{
+  height: 540px;
+  width: 10px;
+  z-index: 180;
+  margin-left: 25px;
+  margin-top: 30px;
+  display: none;
+}
+
+.LightArrow{
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  pointer-events: none;
+  border-radius: 60px;
+  border-width: 0.5px;
+  transition: all 0.3s, left 0s, top 0s cubic-bezier(.43,.14,.28,1.01);
+  overflow: hidden;
+  border: solid;
+  border-color: rgba(255, 231, 213, 0.4);
+  border-width: 0.5px;
+  top: 365px;
+  left: 365px;
+}
+.ArrowM{
+  backdrop-filter: blur(1em);
+  -webkit-backdrop-filter: blur(1em);
+  border-radius: 30px;
+  border: solid;
+  border-width: 0.5px;
+  border-color: rgba(43, 43, 43, 0.09);
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.23)/*, inset 0.5px 0.3px 1px rgba(255, 255, 255, 0.4),  inset -0.5px -0.3px 1px rgba(225, 225, 225, 0.4)*/;
+  transform: rotate3d(0, 0, 0, 60deg);
+  transition: all 0.4s;
+  overflow: hidden;
+  scale: 1;
+  backdrop-filter: blur(0.6em);
+  -webkit-backdrop-filter: blur(0.6em)
+}
+
+.LightArrowPassive{
+  width: 50px;
+  height: 50px;
+  margin-top: 35px;
+  margin-left: 35px;
+}
+
+.ArrowEdge{
+  width: 120px;
+  height: 60px;
+  background-color:  rgb(76, 163, 206);
+  transition: all 0.6s cubic-bezier(.43,.14,.28,1.01);
+}
+
+.ico1{
+  width: 20px;
+ scale: 0.9;
+  margin-left: 50px;
+  margin-top: 35px;
+}
+
+
+.ArrowEdge2{
+  width: 120px;
+  height: 60px;
+  background-color:  rgb(76, 163, 206);
+  transition: all 0.6s cubic-bezier(.43,.14,.28,1.01);
+}
+
+.ico2{
+  width: 20px;
+ scale: 0.9;
+  margin-left: 50px;
+  margin-top: 15px;
+  rotate: 180deg;
+}
+
+.background{
+  position: absolute; 
+  top: 50%;
+  left: 51%;
+  height: 1900x;
+  width: 1900px;
+  z-index: -999;
+  pointer-events: none;
+
+
+ }
+
+
+
+
+.Menu_button_ico{
+  width: 38px; margin: 14px 9px;
+  opacity: 1;
+  transition: all 0.45s;
+}
+
+.Menu_button_ico2{
+  width: 30px; margin: 13px 15px;
+  opacity: 1;
+  transition: all 0.45s;
+}
+
+.Menu_button_ico3{
+  width: 35px; margin: 7.5px 7.5px;
+  opacity: 1;
+  transition: all 0.45s;
+}
+
+.Menu_button_ico4{
+  width: 30px; margin: 15px 15px;
+  opacity: 1;
+  transition: all 0.45s;
+}
+
+.Menu_button{
+  width: 60px; height: 60px;
+  filter: blur(0);
+  transition: filter 1s, width 0.45s scale 0.45s;
+  cursor: none;
+}
+
+.Menu_button_s{
+  width: 200px; height: 60px;
+  filter: blur(0);
+  transition: filter 1s, width 0.45s scale 0.45s;
+  cursor: none;
+}
+
+.Menu_button_s2{
+  width: 200px; height: 117px;
+  filter: blur(0);
+  transition: filter 1s, width 0.45s scale 0.45s;
+  cursor: none;
+}
+
+.Menu_button_s3{
+  width: 50px; height: 50px;
+  filter: blur(0);
+  transition: filter 1s, width 0.45s scale 0.45s;
+  cursor: none;
+}
+
+.Menu_button:hover{
+  width: 200px; ;
+}
+
+.Menu_button:hover .Menu_button_ico{
+  margin-left: 15px;
+}
+
+
+.Menu_button_text_container{
+  filter: blur(0em);
+  opacity: 1;
+  transition: all 0.4s;
+}
+
+.Menu_button:hover .T_button_text_container{
+  filter: blur(0);
+  opacity: 1;
+}
+
+.Menu_button_active{
+  background-color:  rgb(76, 163, 206);
+}
+
+
+
+.Menu_button_passive{
+  transform: translateY(-20px);
+  opacity: 0;
+ visibility: hidden;
+  filter: blur(1em);
+}
+
+
+.driveStyle{
+  background-color: white;
+}
+
+
+.loadPage{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  opacity: 1;
+  text-align: center;
+  filter: blur(0);
+  transition: opacity 0.6s, filter 0.6s cubic-bezier(.85,-0.01,.38,1);
+  z-index: 1000;
+}
+.mainLogo{
+  transition: all 1.2s cubic-bezier(.85,-0.01,.38,1);
+  filter: blur(20px);
+  opacity: 0;
+  top: 55%;
+}
+.mainLogoActive{
+  filter: blur(0px);
+  opacity: 1;
+  top: 50%;
+}
+.loadText{
+  filter: blur(20px);
+  opacity: 0;
+  font-family: Figtree, sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+  top: 55.5%;
+  letter-spacing: 2px;
+  transition: all 1.3s cubic-bezier(.85,-0.01,.38,1);
+}
+.loadTextActive{
+  filter: blur(0px);
+  opacity: 0.8;
+  top: 50%;
+  letter-spacing: 10px;
+}

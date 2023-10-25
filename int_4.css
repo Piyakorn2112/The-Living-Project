@@ -1,0 +1,284 @@
+body{
+  margin: 0;
+  overflow: hidden;
+}
+#parent{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 22, 40, 0);
+  position: absolute;
+}
+.dot{
+  width: 10px;
+  height: 10px;
+  background-color: darkorange;
+  border-radius: 5px;
+  position: absolute;
+}
+
+#plate{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(34, 255, 0, 0);
+  position: absolute;
+}
+.warpperOUT{
+  width: 200px;
+  height: 200px;
+  background-color: rgba(233, 235, 176, 0);
+  position: absolute;
+  transition: all 3s cubic-bezier(.85,-0.01,.38,1);
+  top: 0;
+  left: 0;
+}
+.warpperMed{
+  width: 200px;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(176, 226, 235, 0);
+}
+.warpperIN{
+  width: 130px;
+  height: 130px;
+  top: 35px;
+  left: 35px;
+  background-color: rgba(208, 112, 9, 0);
+  transform-origin: center;
+  rotate: 30deg;
+  position: relative;
+  transition: all 1s, rotate 20s cubic-bezier(.85,-0.01,.38,1);
+}
+.Blob{
+  width: 10px;
+  height: 20px;
+  background-color: rgb(218, 202, 163);
+  position: absolute;
+  scale: 0.9;
+  opacity: 0;
+  transform: rotate(0deg);
+  transform-origin: center;
+  transition: opacity 2s, scale 1.5s cubic-bezier(.52,-0.01,0,1.34);
+}
+.BlobActive{
+  scale: 1.5;
+  background-color: rgb(138, 153, 255);
+  opacity: 1;
+}
+.Blob5{
+  width: 10px;
+  height: 10px;
+  background-color: rgb(218, 202, 163);
+  position: absolute;
+  scale: 1;
+}
+
+.warpperOUTH{
+  width: 200px;
+  height: 200px;
+  background-color: rgba(233, 33, 46, 0);
+  position: absolute;
+  transition: all 8s, scale 0s cubic-bezier(.85,-0.01,.38,1);
+  scale: 1;
+}
+.warpperINH{
+  width: 130px;
+  height: 130px;
+  top: 35px;
+  left: 35px;
+  background-color: rgba(217, 123, 187, 0);
+  transform-origin: center;
+  rotate: 30deg;
+  position: relative;
+  transition: all 6s, filter 0s cubic-bezier(.85,-0.01,.38,1);
+  filter: hue-rotate(-0deg) contrast(1.2);
+}
+.BlobH{
+  width: 10px;
+  height: 20px;
+  background-color: rgb(218, 202, 163);
+  position: absolute;
+  scale: 1.3;
+  opacity: 1;
+  transform: rotate(0deg);
+  transform-origin: center;
+}
+.BlobHC{
+  width: 10px;
+  height: 20px;
+  background-color: rgb(218, 202, 163);
+  position: absolute;
+  scale: 0.8;
+  opacity: 1;
+  transform: rotate(0deg);
+  transform-origin: center;
+}
+.BacG{
+  transform-origin: center;
+  width: 70px;
+  height: 90px;
+  margin-top: -35px;
+  margin-left: -35px;
+  scale: 1.3;
+ 
+}
+.BacGs{
+  transform-origin: center;
+  width: 60px;
+  height: 60px;
+  margin-top: -30px;
+  margin-left: -30px;
+  scale: 1.2;
+  filter: brightness(1);
+  transition: filter 0.8s;
+
+}
+.BacH{
+  transform-origin: center;
+  width: 110px;
+  height: 110px;
+  margin-top: -55px;
+  margin-left: -55px;
+}
+.Lighter{
+  width: 30px;
+  height: 30px;
+  background-color: rgba(137, 43, 226, 0);
+  margin-top: -100px;
+  opacity: 1;
+}
+.background{
+  position: absolute; 
+  top: 50%;
+  left: 51%;
+  height: 1900x;
+  width: 1900px;
+  z-index: -999;
+  pointer-events: none;
+ }
+
+ .Menu_button_ico{
+  width: 36px; margin: 14px 11px;
+  opacity: 1;
+  transition: all 0.45s;
+}
+
+.Menu_button_ico2{
+  width: 30px; margin: 14px 15px;
+  opacity: 1;
+  transition: all 0.45s;
+}
+
+.Menu_button_ico3{
+  width: 35px; margin: 7.5px 7.5px;
+  opacity: 1;
+  transition: all 0.45s;
+}
+
+.Menu_button_ico4{
+  width: 30px; margin: 15px 15px;
+  opacity: 1;
+  transition: all 0.45s;
+}
+
+.Menu_button{
+  width: 60px; height: 60px;
+  filter: blur(0);
+  transition: filter 1s, width 0.45s scale 0.45s;
+  cursor: none;
+}
+
+.Menu_button_s{
+  width: 200px; height: 60px;
+  filter: blur(0);
+  transition: filter 1s, width 0.45s scale 0.45s;
+  cursor: none;
+}
+
+.Menu_button_s2{
+  width: 200px; height: 117px;
+  filter: blur(0);
+  transition: filter 1s, width 0.45s scale 0.45s;
+  cursor: none;
+}
+
+.Menu_button_s3{
+  width: 50px; height: 50px;
+  filter: blur(0);
+  transition: filter 1s, width 0.45s scale 0.45s;
+  cursor: none;
+}
+
+.Menu_button:hover{
+  width: 200px; ;
+}
+
+.Menu_button:hover .Menu_button_ico{
+  margin-left: 15px;
+}
+
+
+.Menu_button_text_container{
+  filter: blur(0em);
+  opacity: 1;
+  transition: all 0.4s;
+}
+
+.Menu_button:hover .T_button_text_container{
+  filter: blur(0);
+  opacity: 1;
+}
+
+.Menu_button_active{
+  background-color:  rgb(169, 76, 206);
+}
+
+
+
+.Menu_button_passive{
+  transform: translateY(-20px);
+  opacity: 0;
+ visibility: hidden;
+  filter: blur(1em);
+}
+
+.loadPage{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  opacity: 1;
+  text-align: center;
+  filter: blur(0);
+  transition: opacity 0.6s, filter 0.6s cubic-bezier(.85,-0.01,.38,1);
+  z-index: 1000;
+}
+.mainLogo{
+  transition: all 1.2s cubic-bezier(.85,-0.01,.38,1);
+  filter: blur(20px);
+  opacity: 0;
+  top: 55%;
+}
+.mainLogoActive{
+  filter: blur(0px);
+  opacity: 1;
+  top: 50%;
+}
+.loadText{
+  filter: blur(20px);
+  opacity: 0;
+  font-family: Figtree, sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+  top: 55.5%;
+  letter-spacing: 2px;
+  transition: all 1.3s cubic-bezier(.85,-0.01,.38,1);
+}
+.loadTextActive{
+  filter: blur(0px);
+  opacity: 0.8;
+  top: 50%;
+  letter-spacing: 10px;
+}

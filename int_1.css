@@ -1,0 +1,269 @@
+.short_img_red1{
+  height: 300px;
+  aspect-ratio: 1/1.5;
+  position: absolute;
+  filter:blur(0);
+  bottom: -50px;
+  left: 0px;
+  right: 0px;
+  transition: opacity 0.2s, aspect-ratio 0.95s, filter 0.25s, height 0.9s, visibility 0.4s ; 
+  opacity: 1;
+}
+.short_img_red1:hover{
+  aspect-ratio: 1/1.6;
+  height: 320px;
+}
+.long_img_red1{
+  height: 320px;
+  position: absolute;
+  filter: blur(10px);
+  transition: opacity 0.2s, aspect-ratio 0.4s, filter 0.25s, height 0.4s, visibility 0.4s ;
+  aspect-ratio: 5/8;
+  visibility: hidden;
+  opacity: 0;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  scale: 1.2;
+}
+.long_img_red1:hover{
+  height: 310px;
+  aspect-ratio: 5/7.5;
+  bottom: 0px;
+}
+.red_contain{
+  position: fixed;
+  height: 160px;
+  width:200px;
+  filter: brightness(0.95) saturate(1.15) hue-rotate(-2deg) contrast(1) ;
+  transition: scale 0.88s;
+}
+
+.short_img_red_active{
+  aspect-ratio: 1/1.9;
+  height: 340px;
+  /*height: 430px;
+  aspect-ratio: 1/2.5;
+  filter: blur(10px);
+  opacity: 0.1;
+  visibility: hidden;*/
+}
+
+.short_img_red_active:hover{
+  aspect-ratio: 1/1.9;
+  height: 340px;
+  /*height: 430px;
+  aspect-ratio: 1/2.5;
+  filter: blur(10px);
+  opacity: 0.1;
+  visibility: hidden;*/
+}
+
+.long_img_red_active{
+ opacity: 1;
+ filter: blur(0);
+ aspect-ratio: 5/10;
+ height: 400px;
+ visibility: visible;
+
+ 
+}
+
+.long_img_red_active:hover{
+  opacity: 1;
+  filter: blur(0);
+  aspect-ratio: 5/10.2;
+  height: 410px;
+  visibility: visible;
+  
+ }
+
+ .background{
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  height: 1900x;
+  width: 1900px;
+  z-index: -999;
+
+
+ }
+
+ .Parrax{
+  transform: translate(50%, 50%);
+ }
+
+
+
+
+
+/*
+.Menu_button_container:hover > .Menu_button{
+  width: 60px; height: 60px;
+  filter: blur(0);
+  scale: 1;
+  opacity: 1;
+  right: -80px;
+
+}
+*/
+
+
+
+.Menu_button_ico{
+  width: 30px; margin: 14.5px 16px;
+  opacity: 1;
+  transition: all 0.45s;
+}
+
+.Menu_button_ico2{
+  width: 30px; margin: 13px 15px;
+  opacity: 1;
+  transition: all 0.45s;
+}
+
+.Menu_button_ico3{
+  width: 35px; margin: 7.5px 7.5px;
+  opacity: 1;
+  transition: all 0.45s;
+}
+
+.Menu_button_ico4{
+  width: 30px; margin: 15px 15px;
+  opacity: 1;
+  transition: all 0.45s;
+}
+
+.Menu_button{
+  width: 60px; height: 60px;
+  filter: blur(0);
+  transition: filter 1s, width 0.45s scale 0.45s;
+  cursor: none;
+}
+
+.Menu_button_s{
+  width: 200px; height: 60px;
+  filter: blur(0);
+  transition: filter 1s, width 0.45s scale 0.45s;
+  cursor: none;
+}
+
+.Menu_button_s2{
+  width: 200px; height: 117px;
+  filter: blur(0);
+  transition: filter 1s, width 0.45s scale 0.45s;
+  cursor: none;
+}
+
+.Menu_button_s3{
+  width: 50px; height: 50px;
+  filter: blur(0);
+  transition: filter 1s, width 0.45s scale 0.45s;
+  cursor: none;
+}
+
+.Menu_button:hover{
+  width: 200px; ;
+}
+
+.Menu_button:hover .Menu_button_ico{
+  margin-left: 15px;
+}
+
+
+.Menu_button_text_container{
+  filter: blur(0em);
+  opacity: 1;
+  transition: all 0.4s;
+}
+
+.Menu_button:hover .T_button_text_container{
+  filter: blur(0);
+  opacity: 1;
+}
+
+.Menu_button_active{
+  background-color: rgb(123, 146, 60);
+}
+
+
+
+.Menu_button_passive{
+  transform: translateY(-20px);
+  opacity: 0;
+ visibility: hidden;
+  filter: blur(1em);
+}
+
+.slideContainer{
+  width: 100%; height: 100%;
+}
+
+.slider{
+  margin: 0;
+  appearance: none;
+  width: 100%;
+  height: 100%;
+ background: none;
+  outline: none;
+  cursor: none;
+
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 0px;
+  height: 60px;
+  background:  rgb(123, 146, 60);
+  
+}
+
+.slideFill{
+  width:220px;
+  height: 60px;
+  background:  rgb(123, 146, 60);
+  pointer-events: none;
+  cursor: none;
+}
+
+.loadPage{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  opacity: 1;
+  text-align: center;
+  filter: blur(0);
+  transition: opacity 0.6s, filter 0.6s cubic-bezier(.85,-0.01,.38,1);
+  z-index: 1000;
+}
+.mainLogo{
+  transition: all 1.2s cubic-bezier(.85,-0.01,.38,1);
+  filter: blur(20px);
+  opacity: 0;
+  top: 55%;
+}
+.mainLogoActive{
+  filter: blur(0px);
+  opacity: 1;
+  top: 50%;
+}
+.loadText{
+  filter: blur(20px);
+  opacity: 0;
+  font-family: Figtree, sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+  top: 55.5%;
+  letter-spacing: 2px;
+  transition: all 1.3s cubic-bezier(.85,-0.01,.38,1);
+}
+.loadTextActive{
+  filter: blur(0px);
+  opacity: 0.8;
+  top: 50%;
+  letter-spacing: 10px;
+}

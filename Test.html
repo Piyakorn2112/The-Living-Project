@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Circles Game</title>
+<style>
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.circles {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 10px;
+filter: brightness();
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: #ccc;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.circle:hover {
+  background-color: #0a43ff4d;
+}
+
+.circle.b {
+  background-color: #ff0000;
+}
+.circle.c {
+  background-color: #80cb46;
+}
+</style>
+</head>
+<body>
+<div class="circles">
+  <div class="circle">A</div>
+  <div class="circle">A</div>
+  <div class="circle">A</div>
+  <div class="circle">A</div>
+  <div class="circle">A</div>
+  <div class="circle">A</div>
+  <div class="circle">A</div>
+  <div class="circle">A</div>
+  <div class="circle">A</div>
+  <div class="circle">A</div>
+  <div class="circle">A</div>
+  <div class="circle">A</div>
+  <div class="circle">A</div>
+  <div class="circle">A</div>
+  <div class="circle">A</div>
+  <div class="circle">A</div>
+  <div class="circle">A</div>
+  <div class="circle">A</div>
+  <div class="circle">A</div>
+  <div class="circle">A</div>
+  <div class="circle">A</div>
+  <div class="circle">A</div>
+  <div class="circle">A</div>
+  <div class="circle">A</div>
+  <div class="circle">A</div>
+  
+</div>
+<button onclick="randomCircle()">Random Circle</button>
+<script>
+var circles = document.querySelectorAll(".circle");
+var score = 0;
+
+function randomCircle() {
+  var randomCircle = circles[Math.floor(Math.random() * circles.length)];
+  
+  console.log(randomCircle.parentElement.rowIndex)
+
+  if (randomCircle.classList.contains("b")) {
+    return;
+  }
+
+  if (randomCircle.parentElement.rowIndex === 5) {
+    randomCircle.classList.add("b");
+    score++;
+  } else {
+    var belowCircle = randomCircle.parentElement.nextElementSibling.querySelector(".circle");
+    if (belowCircle && belowCircle.classList.contains("b")) {
+      randomCircle.classList.add("b");
+      score++;
+    }
+  }
+
+}
+setInterval(randomCircle, 30);
+</script>
+</body>
+</html>
